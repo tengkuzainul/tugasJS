@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style-2.css" />
+    <title>Tugas JS - Form Input</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">FORM INPUT</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <form id="form">
+          <tr>
+            <td>
+              <label for="nama">Nama</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="nama"
+                id="nama"
+                placeholder="Masukkan Nama"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="pekerjaan">Pekerjaan</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="pekerjaan"
+                id="pekerjaan"
+                placeholder="Masukkan Pekerjaan"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="hobi">Hobi</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="hobi"
+                id="hobi"
+                placeholder="Masukkan Hobi"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <button type="button" onclick="dataPerson()">Submit</button>
+            </td>
+          </tr>
+        </form>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">
+            <p id="Hasil" style="text-align: center"></p>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
