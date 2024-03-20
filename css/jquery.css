@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px 10px 40px;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+#div1 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px;
+  width: 60%;
+  height: 300px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+#div2 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px;
+  width: 60%;
+  height: 300px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+#div3 {
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px;
+  width: 60%;
+  height: 300px;
+  margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 400;
+}

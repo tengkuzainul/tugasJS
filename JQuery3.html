@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handler</title>
+    <link rel="stylesheet" href="css/jquery.css" />
+  </head>
+  <body>
+    <h2>Tugas JQuery</h2>
+    <div id="div1">Ini Harimau</div>
+
+    <div id="div2">Ini Kucing</div>
+
+    <div id="div3">Ini Elang</div>
+
+    <audio id="harimau-audio" src="sound/tiger-attack-195840.mp3"></audio>
+    <audio id="kucing-audio" src="sound/cat-meow-14536.mp3"></audio>
+    <audio id="elang-audio" src="sound/gryffin-cry-6995.mp3"></audio>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#div1").mouseover(function () {
+          $(this).css({
+            background:
+              "url('https://acehprov.go.id/media/2023.01/whatsapp_image_2023-01-29_at_16_15_171.jpeg')",
+            "background-repeat": "no-repeat",
+            "background-size": "cover",
+            "background-position": "center, center",
+          });
+          var audio = document.getElementById("harimau-audio");
+          audio.play();
+        });
+
+        $("#div1").mouseout(function () {
+          $(this).css({
+            background: "#ffffff",
+          });
+          var audio = document.getElementById("harimau-audio");
+          audio.pause();
+          audio.currentTime = 0;
+        });
+
+        $("#div2").mouseover(function () {
+          $(this).css({
+            background:
+              "url('https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/2366147c-9d05-4414-b016-2bd0e3233b1a/shutterstock_97506335_0.jpg?w=1920&q=75&auto=format')",
+            "background-repeat": "no-repeat",
+            "background-size": "cover",
+            "background-position": "center, center",
+          });
+          var audio = document.getElementById("kucing-audio");
+          audio.play();
+        });
+
+        $("#div2").mouseout(function () {
+          $(this).css({
+            background: "#ffffff",
+          });
+          var audio = document.getElementById("kucing-audio");
+          audio.pause();
+          audio.currentTime = 0;
+        });
+
+        $("#div3").mouseover(function () {
+          $(this).css({
+            background:
+              "url('https://radarkepahiang.disway.id/upload/7e2536233b87d3a22be5b65537d5ae98.jpg')",
+            "background-repeat": "no-repeat",
+            "background-size": "cover",
+            "background-position": "center, center",
+          });
+          var audio = document.getElementById("elang-audio");
+          audio.play();
+        });
+
+        $("#div3").mouseout(function () {
+          $(this).css({
+            background: "#ffffff",
+          });
+          var audio = document.getElementById("elang-audio");
+          audio.pause();
+          audio.currentTime = 0;
+        });
+      });
+    </script>
+  </body>
+</html>
